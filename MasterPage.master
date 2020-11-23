@@ -1,0 +1,62 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/UserControl/ucHeader.ascx" TagPrefix="uc1" TagName="ucHeader" %>
+<%@ Register Src="~/UserControl/ucFooter.ascx" TagPrefix="uc1" TagName="ucFooter" %>
+<%@ Register Src="~/UserControl/ucContactModal.ascx" TagPrefix="uc1" TagName="ucContactModal" %>
+<%@ Register Src="~/UserControl/ucSearch.ascx" TagPrefix="uc1" TagName="ucSearch" %>
+
+
+
+
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link rel="shortcut icon" href="fileUploads/system/Favicon.png" />
+    <link rel="stylesheet" href="Content/style.css" />
+</head>
+<body>
+    <div id="loading">
+        <img id="loading-image" src="fileUploads/system/loader.gif" alt="Loading..." />
+    </div>
+    <uc1:ucHeader runat="server" ID="ucHeader" />
+    <form class="main-content" runat="server">
+        <asp:ContentPlaceHolder ID="main_content" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+    <uc1:ucFooter runat="server" ID="ucFooter" />
+    <div id="no-robot">
+        <a class="bg-primary" role="button" id="back-to-top">
+            <i class="fa fa-rocket text-light"></i>
+        </a>
+        <div id="message" class="zalo-chat-widget" data-oaid="579745863508352884" data-welcome-message="Huyndai Rất vui khi được hỗ trợ bạn!" data-autopopup="20" data-width="350" data-height="420"></div>
+        <img class="please-click" src="fileUploads/system/ezgif-6-b0fb1a6c87d4.gif" />
+        <uc1:ucContactModal runat="server" ID="ucContactModal" />
+        <uc1:ucSearch runat="server" ID="ucSearch" />
+        <section id="facebook">
+            <div id="fb-root"></div>
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v8.0" nonce="MhII2zWM"></script>
+        </section>
+        <section id="zalo">
+            <script src="https://sp.zalo.me/plugins/sdk.js"></script>
+        </section>
+    </div>
+    <section id="script">
+        <script src="Scripts/jquery-3.0.0.min.js"></script>
+        <script src="Scripts/popper.min.js"></script>
+        <script src="Scripts/bootstrap.min.js"></script>
+        <script src="Plugins/mdb/mdb.min.js"></script>
+        <div runat="server">
+            <asp:ContentPlaceHolder ID="script_holder" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <script src="Scripts/script.js"></script>
+    </section>
+</body>
+</html>
