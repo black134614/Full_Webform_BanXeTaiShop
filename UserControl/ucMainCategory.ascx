@@ -10,7 +10,7 @@
                 <asp:Repeater DataSource='<%# Eval("Category") %>' runat="server">
                     <ItemTemplate>
                         <a href='<%# Eval("cID","../List.aspx?cID={0}") %>' class="item">
-                            <img src="../fileUploads/images/Category/Xe-Co-Gioi.png" alt='<%# Eval("Description") %>' />
+                            <img src='<%# Eval("Avatar") %>' alt='<%# Eval("Description") %>' />
                             <h6 class="item-title text-center"><%# Eval("Title") %></h6>
                         </a>
                     </ItemTemplate>

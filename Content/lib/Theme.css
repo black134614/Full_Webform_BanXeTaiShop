@@ -399,6 +399,7 @@ button:focus {
     transform: translateY(-100%);
     opacity: 0;
     transition: all 0.5s;
+    overflow: overlay;
 }
 
     #morphing-content.active {
@@ -412,12 +413,14 @@ button:focus {
         margin-right: auto;
         margin-top: 20vh;
     }
-
-/*#endregion */
-/*#region header */
-.main-navbar {
-    background-color: #0d1239;
-}
+    #morphing-content label{
+        color: #fff;
+    }
+    /*#endregion */
+    /*#region header */
+    .main-navbar {
+        background-color: #0d1239;
+    }
 
     .main-navbar .navbar-brand {
         max-width: 200px;

@@ -10,7 +10,7 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="inputEmail4">Tên của bạn</label>
-                <input type="text" class="form-control CustomerName" id="inputCustomerName" runat="server">
+                <input type="text" class="form-control CustomerName" id="inputCustomerName" placeholder="*" runat="server">
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Địa chỉ</label>
@@ -22,7 +22,7 @@
             </div>
             <div class="form-group col-md-6">
                 <label for="inputPassword4">Số điện thoại</label>
-                <input type="text" maxlength="10" class="form-control CustomerPhoneNumber phone-number" id="inputCustomerPhoneNumber" runat="server">
+                <input type="text" maxlength="10" placeholder="*" class="form-control CustomerPhoneNumber phone-number" id="inputCustomerPhoneNumber" runat="server">
             </div>
         </div>
         <div class="form-group">
