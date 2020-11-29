@@ -13,11 +13,11 @@ public partial class UserControl_ucContactModal : System.Web.UI.UserControl
     }
     protected void btnSend_Click(object sender, EventArgs e)
     {
-        
+
         String customerName = inputCustomerName.Value.Trim();
         String customerAddress = inputCustomerAddress.Value.Trim();
         String customerEmail = inputCustomerEmail.Value.Trim();
-        String customerPhoneNumber = inputCustomerPhoneNumber.Value.Trim();
+        String customerPhoneNumber = inputCustomerPhoneNumber.Value.Trim().Replace("-", "");
         String customerNote = textareaCustomerNote.Text;
 
         using (var context = new DBEntities())

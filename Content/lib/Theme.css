@@ -76,108 +76,6 @@ body::-webkit-scrollbar {
     z-index: 9999;
 }
 
-/*#region modal overlay */
-
-.morphing-btn-wrap {
-    display: inline-block;
-    position: relative;
-    text-align: center;
-}
-
-.morphing-btn {
-    -webkit-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
-    -moz-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
-    -o-transition: background 0.3s, color 0.2s 0.2s, width 0.2s 0s;
-    transition: color 0.3s 0.2s, width 0.2s 0s;
-    white-space: nowrap;
-    box-sizing: border-box;
-}
-
-.morphing-btn_circle {
-    color: transparent !important;
-    padding-left: 0;
-    padding-right: 0;
-    width: 35.6px !important;
-    /* Override inline style rule */
-    -webkit-transition: color 0.2s 0s, width .3s 0.2s;
-    -moz-transition: color 0.2s 0s, width .3s 0.2s;
-    -o-transition: color 0.2s 0s, width .3s 0.2s;
-    transition: color 0.2s 0s, width .3s 0.2s;
-}
-
-.morphing-btn-clone {
-    position: fixed;
-    background: #FF6666;
-    border-radius: 50%;
-    z-index: 3;
-    -webkit-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-    -moz-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-    -o-transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-    transition: all 0.5s cubic-bezier(.65, .05, .36, 1);
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-.morphing-btn-clone_visible {
-    display: block;
-    -webkit-transform: scale(1) !important;
-    -moz-transform: scale(1) !important;
-    -ms-transform: scale(1) !important;
-    -o-transform: scale(1) !important;
-    transform: scale(1) !important;
-}
-
-.fancybox-morphing .fancybox-bg {
-    background: #FF6666;
-    opacity: 1;
-}
-
-.fancybox-morphing .fancybox-toolbar {
-    top: 20px;
-    right: 40px;
-}
-
-.fancybox-morphing .fancybox-button--close {
-    background: rgba(0, 0, 0, 0.2);
-    border-radius: 50%;
-    color: #fff;
-}
-
-    .fancybox-morphing .fancybox-button--close::after,
-    .fancybox-morphing .fancybox-button--close::before {
-        height: 1.55px;
-        width: 22px;
-        left: calc(50% - 11px);
-    }
-
-    .fancybox-morphing .fancybox-button--close:hover {
-        background: rgba(0, 0, 0, 0.25);
-    }
-
-/*style content*/
-
-.morphing-content {
-    margin: 0;
-    position: relative;
-    background: transparent;
-    color: #fff;
-    padding: 6em 10vw;
-    line-height: 2;
-    z-index: 3;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
-}
-
-    .morphing-content a {
-        color: #fff;
-    }
-
-.full-modal-morphing {
-    width: 95vw;
-}
-
-/*#endregion */
-
 .navbar .dropdown-menu {
     position: relative !important;
 }
@@ -328,7 +226,7 @@ h5 {
 }
 
 .btn-buy > img {
-    width: auto!important;
+    width: auto !important;
 }
 /*#endregion */
 
@@ -387,40 +285,13 @@ button:focus {
     z-index: 100;
 }
 
-#morphing-content {
-    position: fixed;
-    z-index: 999;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding: 1em;
-    background: rgba(0, 0, 0, 0.8);
-    transform: translateY(-100%);
-    opacity: 0;
-    transition: all 0.5s;
-    overflow: overlay;
+
+/*#endregion */
+
+/*#region header */
+.main-navbar {
+    background-color: #0d1239;
 }
-
-    #morphing-content.active {
-        transform: translateY(0);
-        opacity: 1;
-    }
-
-    #morphing-content > div {
-        max-width: 1000px;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 20vh;
-    }
-    #morphing-content label{
-        color: #fff;
-    }
-    /*#endregion */
-    /*#region header */
-    .main-navbar {
-        background-color: #0d1239;
-    }
 
     .main-navbar .navbar-brand {
         max-width: 200px;

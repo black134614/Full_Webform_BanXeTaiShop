@@ -395,12 +395,12 @@
         }
     });
 
-    $("#customerContact").click(function () {
-        $("#morphing-content").addClass("active");
-    });
-    $("#closeCustomerContact").click(function (e) {
-        $("#morphing-content").removeClass("active");
-        e.preventDefault();
-    });
+    //$("#customerContact").click(function () {
+    //    $("#morphing-content").addClass("active");
+    //});
+    //$("#closeCustomerContact").click(function (e) {
+    //    $("#morphing-content").removeClass("active");
+    //    e.preventDefault();
+    //});
 });
 

@@ -77,14 +77,14 @@
                         </p>
                         <div class="item-tool">
                             <div class="d-inline-block light-box-item">
-                                <a href="javascript:;" class="btn btn-warning" id="customerContact">Đặt Trước
+                                <a href="javascript:;" class="btn btn-warning" data-toggle="modal" data-target="#customerContact">
+                                    Đặt Trước
                                 </a>
                             </div>
-
                             <div class="d-inline-block light-box-item">
-                                <a data-morphing data-src="#morphing-content1" href="javascript:;" class="btn btn-info">Dự Toán Trả Góp<span class="hot-icon fa fa-star fa-spin"></span>
+                                <a data-fancybox data-src="#product-cost-detail" href="javascript:;" class="btn btn-info">Dự Toán Trả Góp<span class="hot-icon fa fa-star fa-spin"></span>
                                 </a>
-                                <div style="display: none" id="morphing-content1" class="hidden rounded full-modal-morphing">
+                                <div style="display: none" id="product-cost-detail" class="hidden rounded full-modal-morphing">
                                     <div class="row">
                                         <asp:Repeater DataSource='<%# Eval("ProductCost") %>' runat="server">
                                             <ItemTemplate>
@@ -225,22 +225,22 @@
                                 </div>
                             </div>
                             <div class="d-inline-block light-box-item">
-                                <a data-morphing data-src="#morphing-content2" href="javascript:;" class="btn btn-danger">Thông tin xe
+                                <a data-fancybox data-src="#product-detail" href="javascript:;" class="btn btn-danger">Thông tin xe
                                 </a>
                                 <asp:Repeater DataSource='<%# Eval("ProductDetai") %>' runat="server">
                                     <ItemTemplate>
-                                        <div style="display: none" id="morphing-content2" class="hidden rounded detail">
+                                        <div style="display: none" id="product-detail"" class="hidden rounded detail">
                                             <%# Eval("Detail") %>
                                         </div>
                                     </ItemTemplate>
                                 </asp:Repeater>
                             </div>
                             <div class="d-inline-block light-box-item">
-                                <a data-morphing data-src="#morphing-content3" href="javascript:;" class="btn btn-success">Thông số kĩ thuật
+                                <a data-fancybox data-src="#product-tech-detail"" href="javascript:;" class="btn btn-success">Thông số kĩ thuật
                                 </a>
                                 <asp:Repeater DataSource='<%# Eval("ProductTech") %>' runat="server">
                                     <ItemTemplate>
-                                        <div style="display: none" id="morphing-content3" class="hidden detail rounded">
+                                        <div style="display: none" id="product-tech-detail"" class="hidden detail rounded">
                                             <%# Eval("Detail") %>
                                         </div>
                                     </ItemTemplate>
@@ -256,7 +256,7 @@
                                     data-numposts="3" data-width="100%">
                                 </div>
                             </div>
-                            get 
+                            get
                             <span class="fb-comments-count" data-href="https://capnhatcoc.blogspot.com/2020/07/ban-co-biet-giai-au-quoc-te-clash-of.html"></span>
                             comment to database
                         </div>
@@ -270,7 +270,6 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="script_holder" runat="Server">
     <script src="Plugins/FancyBox/jquery.fancybox.min.js"></script>
-    <script src="Plugins/modalOverlay/Overlay.js"></script>
     <script src="Plugins/OwlCarousel2/owl.carousel.min.js"></script>
     <script src="Plugins/aos/aos.js"></script>
     <script src="Plugins/mask/jquery.mask.min.js"></script>
