@@ -1,4 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucQuote.ascx.cs" Inherits="UserControl_ucQuote" %>
+<%-- khách yêu cầu Web tự update tĩnh không động! --%>
 <section class="px-3 bg-light" data-aos="fade-up" data-aos-duration="1000">
     <div>
         <h4 class="py-3 text-center">Khách hàng nói về chúng tôi!</h4>

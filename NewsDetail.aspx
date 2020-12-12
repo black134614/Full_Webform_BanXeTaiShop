@@ -31,10 +31,10 @@
                 <ItemTemplate>
                     <div class="col-12 col-xl-8 detail">
                         <h4 class="text-center text-primary my-3 title"><%# Eval("Title") %></h4>
-                        <div class="description font-weight-bold" style="text-indent: 2rem;">
+                        <div class="description font-weight-bold text-center" style="text-indent: 2rem;">
                             <%# Eval("Description") %>
                         </div>
-                        <p>
+                        <p class="lh-base">
                             <%# Eval("Detail") %>
                         </p>
                         <div class="my-3">
@@ -44,7 +44,7 @@
                                 <%# Eval("Keywords") %>
                             </div>
                             <div class="mt-2 text-muted">
-                                <span>Bài viết liên quan:</span>
+                                <span>Sản phẩm liên quan:</span>
                                 <asp:Repeater DataSource='<%# Eval("Relative") %>' runat="server">
                                     <ItemTemplate>
                                         <asp:Repeater DataSource='<%# Eval("Product") %>' runat="server">

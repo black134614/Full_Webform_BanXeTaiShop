@@ -13,15 +13,29 @@
                     <br />
                     <a href='<%# Eval("Email","mailto:{0}?&subject=Big%20News&body=Body-goes-here") %>'><span class="fa fa-envelope"></span><%# Eval("Email") %></a>
                 </div>
-                <div class="col-12 col-sm-6 col-lg-4">
-                    <h4>Bạn cần thêm thông tin<span class="animate__animated animate__heartBeat animate__infinite d-inline-block">?</span></h4>
-                    <span class="">Để lại thông tin chúng tôi có thể giúp bạn!</span>
-                    <div class="md-form input-with-post-icon">
-                        <i class="fa fa-phone input-prefix text-danger"></i>
-                        <input type="text" id="input_Contact" runat="server" class="form-control" Readonly>
-                        <label for="input_Contact">Số điện thoại của bạn</label>
+                <div class="col-12 col-sm-6 col-lg-4 row">
+                    <h4 class="col-12">Hoạt động của chúng tôi</h4>
+                    <div class="col-12 text-center">
+                        <a href="https://thietkeshowroomhanoi.com/wp-content/uploads/2017/07/Thiet-ke-showroom-xe-may-3.jpg"
+                            data-fancybox="images-preview"
+                            data-width="1500" data-height="1000"
+                            data-thumbs='{"autoStart":true}'>
+                            <img class="rounded" style="max-width: 350px; max-height: 200px" src="https://thietkeshowroomhanoi.com/wp-content/uploads/2017/07/Thiet-ke-showroom-xe-may-3.jpg" />
+                        </a>
+                        <div style="display: none;">
+                            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGmPJM7PSHdod0gUfHtXOW0IitZZ764Nwbw&usqp=CAU" data-fancybox="images-preview"
+                                data-width="1500" data-height="1000"
+                                data-thumb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSpGmPJM7PSHdod0gUfHtXOW0IitZZ764Nwbw&usqp=CAU"></a>
+
+                            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqqlYUiIRBS_9c9h-Q6RaHPDWozTCEddfUA&usqp=CAU" data-fancybox="images-preview"
+                                data-width="1500" data-height="1000"
+                                data-thumb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxqqlYUiIRBS_9c9h-Q6RaHPDWozTCEddfUA&usqp=CAU"></a>
+
+                            <a href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQshBOxqFvzKsvFpBnrwpmtox3Px-Lmd-JA&usqp=CAU" data-fancybox="images-preview"
+                                data-width="1500" data-height="1000"
+                                data-thumb="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTQshBOxqFvzKsvFpBnrwpmtox3Px-Lmd-JA&usqp=CAU"></a>
+                        </div>
                     </div>
-                    <button type="button" class="btn btn-primary btn-rounded">Gửi</button>
                 </div>
                 <div class="col-12 col-sm-6 col-lg-4">
                     <h4 class="follow">Theo dõi chúng tôi <span class="fa fa-hand-o-down"></span></h4>

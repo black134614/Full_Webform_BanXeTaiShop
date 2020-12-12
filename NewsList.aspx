@@ -1,8 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="NewsList.aspx.cs" Inherits="NewsList" %>
-
 <%@ Register Src="~/UserControl/ucMainCategory.ascx" TagPrefix="uc1" TagName="ucMainCategory" %>
-
-
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Tin tuc - ten category</title>
@@ -24,7 +21,7 @@
     </nav>
     <asp:Repeater ID="Repeater_Main" runat="server">
         <ItemTemplate>
-            <section class="container-fluid my-3">
+            <section class="container-fluid my-3 min-vh-100">
                 <div>
                     <h3 class="text-center text-uppercase"><%# Eval("Title") %></h3>
                 </div>

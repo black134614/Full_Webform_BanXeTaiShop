@@ -9,7 +9,7 @@
                 <asp:Repeater DataSource='<%# Eval("News") %>' runat="server">
                     <ItemTemplate>
                         <div class="item col-12 col-sm-6 col-lg-4 col-xl-3">
-                            <a href='<%# String.Format("NewsDetail.aspx?ncID={0}&n=ID{1}",Eval("ncID"),Eval("nID")) %>'>
+                            <a href='<%# String.Format("NewsDetail.aspx?ncID={0}&nID={1}",Eval("ncID"),Eval("nID")) %>'>
                                 <img class="img-fluid rounded animate-img" src='<%# Eval("Avatar") %>'
                                     alt='<%# Eval("Description") %>'
                                     data-toggle="tooltip" title='<%# Eval("Title") %>' />

@@ -1,5 +1,5 @@
 ﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="ucMainCategory.ascx.cs" Inherits="UserControl_ucMainCategory" %>
-<section class="container-fluid px-5 bg-warning" data-aos="fade-up" data-aos-offset="300" data-aos-duration="1000">
+<section class="container-fluid px-5 bg-warning" data-aos="fade-up" data-aos-offset="0" data-aos-duration="1000">
     <asp:Repeater ID="Repeater_Main" runat="server">
         <ItemTemplate>
             <div>

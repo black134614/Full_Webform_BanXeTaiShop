@@ -28,7 +28,7 @@
             animateOut: ['animate__fadeOut', 'animate__FadeOutDown', 'animate__FadeOutLeft', 'animate__FadeOutRight', 'animate__FadeOutUp', 'animate__FadeOutTopLeft', 'animate__FadeOutTopRight', 'animate__FadeOutBottomLeft', 'animate__FadeOutBottomRight'],
             animateIn: ['animate__fadeIn', 'animate__fadeInDown', 'animate__fadeInUp', 'animate__flipInX', 'animate__flipInY', 'animate__rotateIn', 'animate__jackInTheBox', 'animate__zoomIn', 'animate__zoomInDown', 'animate__zoomInUp', 'animate__slideInDown', 'animate__slideInUp', 'animate__backInDown', 'animate__backInUp', 'animate__bounceIn', 'animate__bounceInDown', 'animate__bounceInUp']
         }
-        var numbTem = Math.floor(Math.random() * obj.animateIn.length) //rounding number 
+        var numbTem = Math.floor(Math.random() * obj.animateIn.length) //rounding number
 
 
         var index = e.item.index;
@@ -362,7 +362,7 @@
     });
     //luoi`....
     $('.product .item .btn.btn-danger').addClass('btn-buy');
-    
+
 
     //loader
     setTimeout(() => {
@@ -402,5 +402,32 @@
     //    $("#morphing-content").removeClass("active");
     //    e.preventDefault();
     //});
+
+    //search page click
+    $("#buttonSearch").click(function (e) {
+        var key = $(".inputKeyWord").val().trim().replace(/[_\s]/g, '+');
+        if (key != "" && key.length > 2) {
+            location.replace("/search.aspx?KeyWord=" + key);
+        }
+        e.preventDefault();
+    });
+
+    //search button
+    $("#MaterialButton-search").click(function (e) {
+        var key = $(".Material-input-search").val().trim().replace(/[_\s]/g, '+');
+        if (key != "" && key.length > 2) {
+            location.replace("/search.aspx?KeyWord=" + key);
+        }
+        e.preventDefault();
+    });
+    //search button enter event
+    $(".Material-input-search").on("keypress", function (e) {
+        if (e.keyCode == 13) {
+            var key = $(".Material-input-search").val().trim().replace(/[_\s]/g, '+');
+            if (key != "" && key.length > 2) {
+                location.replace("/search.aspx?KeyWord=" + key);
+            }
+        }
+    });
 });
 

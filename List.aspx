@@ -1,9 +1,5 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="List.aspx.cs" Inherits="List" %>
-
 <%@ Register Src="~/UserControl/ucMainCategory.ascx" TagPrefix="uc1" TagName="ucMainCategory" %>
-
-
-
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="Server">
     <title>Danh sach - ten main-category</title>
     <meta name="description" content="Day la mo ta seo web site " />
@@ -61,7 +57,7 @@
                 <div>
                     <h3 class="text-center text-uppercase"><%# Eval("Title") %></h3>
                 </div>
-                <div class="product row mt-3">
+                <div class="product row mt-3 min-vh-100">
                     <asp:Repeater DataSource='<%# Eval("Product") %>' runat="server">
                         <ItemTemplate>
                             <div class='<%# (Container.ItemIndex + 1) % 2 == 0 ? "item col-12 col-sm-6 col-lg-4 col-xl-3 bg-warning rounded text-center" : "item col-12 col-sm-6 col-lg-4 col-xl-3 rounded text-center" %>' data-aos="zoom-in">
@@ -112,7 +108,7 @@
                 </div>
             </ItemTemplate>
         </asp:Repeater>
-        <nav aria-label="Page navigation example">
+        <%--<nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center">
                 <li class="page-item">
                     <a class="page-link" href="#" aria-label="Previous">
@@ -128,7 +124,7 @@
                     </a>
                 </li>
             </ul>
-        </nav>
+        </nav>--%>
     </section>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="script_holder" runat="Server">
